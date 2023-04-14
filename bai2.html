@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<label>What is the "official" name of javascript?</label>
+<input id="answer" type="text" > <button type="button" onclick="traloi()">Click</button>
+<p id="result"></p>
+
+<script>
+    function traloi() {
+        let a = document.getElementById("answer").value;
+        let c = a === "ECMAScript" || a === "ECMAscript";
+        if (c) {
+            document.getElementById("result").innerHTML = "Right"
+        } else {
+            document.getElementById("result").innerHTML = "Did't know? ECMAscript"
+        }
+    }
+</script>
+
+</body>
+</html>

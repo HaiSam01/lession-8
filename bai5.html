@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<button type="button" onclick="sign()">click here -> ex1</button>
+<button type="button" onclick="sign2()">Click Here -> ex2</button>
+<script>
+  function sign(){
+      let nhapso = parseInt(prompt("Nhap So Vao Day Mau : "));
+    let b = nhapso
+
+    if ( b > 0 ){
+      alert("1")
+    }
+    else if ( b != 0){
+        alert("-1")
+    }
+        else {
+            alert("0");
+    }
+  }
+
+  function sign2(){
+      let nhapso = parseInt(prompt("Nhap So Vao Day Mau : "));
+      let b = nhapso;
+      let c = b > 0;
+      let d = b < 0;
+
+      switch (true){
+          case c:
+              alert("1");
+              break;
+          case d:
+              alert("-1");
+              break;
+          default:
+              alert("0");
+              break;
+      }
+  }
+</script>
+</body>
+</html>

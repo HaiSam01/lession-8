@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body>
+<button type="button" onclick="hehe()"> Click Here -> Ex2</button>
+<button type="button" style="text-align: center" onclick="sum()"> Clich Here - > Ex 1</button>
+<script>
+  function sum(){
+    let a = parseInt(prompt("Nhap Vao So a :"));
+    let b = parseInt(prompt("Nhap Vao So b"));
+    let c = a + b ;
+    let d = ( c < 4 ) ? "Below" : ( c > 4 ) ? `Over`: `So 4`;
+
+alert(d);
+
+  }
+ function hehe(){
+      let a = prompt(" Nhap Gia Tri : ");
+      let anwser = ( a === "Employee"  ) ? "Hello" : ( a === "Director ") ? "Greetings" : ( a === null ) ? " No login " : null ;
+     alert(anwser);
+
+
+ }
+</script>
+</body>
+</html>

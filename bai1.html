@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<label>nhập năm bạn muốn kiểm tra</label>
+<input type="text" name="nam" id="year">
+<button type="button" onclick="testyear()" > Change</button>
+<p id="ketqua"></p>
+
+<script>
+
+    function testyear() {
+        let a = parseInt(document.getElementById("year").value);
+        let b = "nam nhuan"
+        let c = "nam khong nhuan"
+        if (a % 4 == 0) {
+            if (a % 100 != 0) {
+                document.getElementById("ketqua").innerHTML = b;
+            }
+            else if (a % 100 == 0) {
+                    if (a % 400 == 0) {
+                    document.getElementById("ketqua").innerHTML = b;
+                }
+                    else {
+                    document.getElementById("ketqua").innerHTML = c
+                }
+            }
+        }
+        else {
+            document.getElementById("ketqua").innerHTML = c ;
+        }
+    }
+</script>
+
+</body>
+</html>

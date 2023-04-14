@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body style="text-align: center">
+<label>Login
+    <input type="text" id="user"></label>
+
+<button type="button" id = "login" onclick="login()"> Login </button>
+
+<script>
+    function login(){
+        let a = document.getElementById("user").value;
+        let b = a === "admin" || a === "Admin"
+        let c = "TheMaster"
+        let d = prompt("PassWork")
+
+        if ( b === a ){
+            if ( c === d  ) {
+                alert("Welcome");
+            }
+            else if ( d === null ) {
+                alert("Canceled");
+            }
+            else {
+                alert("Wrong password");
+            }
+        }
+        else if ( b === null ) {
+            alert("cancel")
+        }
+        else {
+            alert("Sai Pass or User")
+        }
+
+    }
+</script>
+</body>
+</html>
